@@ -1,11 +1,821 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Teste LP Rodrigo</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Rodrigo Rocha — Gestor de Tráfego Pago. Sistema previsível de aquisição de pacientes particulares para clínicas de estética de alto ticket (R$ 1.500+), com exclusividade por região e métricas claras (CAC, custo por agendamento)." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://seudominio.com/" />
+
+  <meta property="og:title" content="Rodrigo Rocha | Tráfego Pago para Estética Alto Ticket" />
+  <meta property="og:description" content="Como atrair pacientes particulares todos os meses sem depender de indicações ou convênios. Exclusividade por região. Métricas claras." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seudominio.com/" />
+  <meta property="og:image" content="https://seudominio.com/og.jpg" />
+
+  <title>Rodrigo Rocha | Sistema previsível de pacientes particulares</title>
+
+  <!-- Fonts: Montserrat (titles) + Roboto (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --white:#ffffff;
+      --offwhite:#f8f8f8;
+      --light:#f5f5f5;
+      --dark:#000000;
+      --dark-2:#1a1a1a;
+      --muted:#666666;
+      --muted-2:#8a8a8a;
+      --cta:#e74c3c; /* 5% only: CTAs, checks, subtle alerts */
+      --radius:16px;
+      --shadow: 0 18px 40px rgba(0,0,0,.08);
+      --shadow-2: 0 16px 30px rgba(0,0,0,.14);
+      --max: 1100px;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: Roboto, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      color: var(--dark-2);
+      background: var(--white);
+      line-height:1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    a{ color:inherit; text-decoration:none; }
+    img{ max-width:100%; display:block; }
+
+    .wrap{ width:100%; max-width:var(--max); margin:0 auto; padding:0 18px; }
+    .section{ padding:56px 0; }
+    .section.tight{ padding:44px 0; }
+
+    /* Typography */
+    h1,h2,h3{
+      margin:0 0 10px 0;
+      font-family: Montserrat, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+      letter-spacing:-0.02em;
+      color: var(--dark);
+    }
+    h1{
+      font-weight: 900;
+      font-size: clamp(28px, 4.6vw, 46px);
+      line-height:1.08;
+    }
+    h2{
+      font-weight: 900;
+      font-size: clamp(22px, 3.2vw, 34px);
+      line-height:1.16;
+    }
+    h3{
+      font-weight: 800;
+      font-size: 16px;
+      line-height:1.25;
+    }
+    p{ margin:0; color: var(--muted); font-size:16px; }
+    .lead{ font-size: 17px; color: var(--muted); max-width: 62ch; }
+    .micro{ font-size: 13px; color: var(--muted-2); }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border-radius:999px;
+      background: var(--offwhite);
+      border: 1px solid rgba(0,0,0,.06);
+      color: var(--dark-2);
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:999px;
+      background: var(--cta);
+      box-shadow: 0 0 0 4px rgba(231,76,60,.12);
+      flex: 0 0 auto;
+    }
+
+    /* Layout blocks */
+    .hero{
+      background: var(--white);
+      padding-top: 40px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .heroRight{
+      background: var(--offwhite);
+      border: 1px solid rgba(0,0,0,.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .authorityLine{
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--dark-2);
+      opacity: .85;
+    }
+    .authorityLine strong{ font-weight: 800; font-family: Montserrat, sans-serif; }
+
+    .pillRow{ display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px; }
+    .pill{
+      font-size:12px;
+      color: rgba(0,0,0,.78);
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      padding: 7px 10px;
+      border-radius: 999px;
+    }
+
+    /* CTA */
+    .ctaBtn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      width:100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: var(--cta);
+      color: #fff;
+      border: 1px solid rgba(0,0,0,.06);
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      letter-spacing: .01em;
+      text-transform: uppercase;
+      box-shadow: 0 14px 26px rgba(231,76,60,.22);
+      transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+      will-change: transform;
+    }
+    .ctaBtn:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 16px 34px rgba(231,76,60,.28);
+      filter: saturate(1.03);
+    }
+    .ctaBtn:active{ transform: translateY(0); box-shadow: 0 10px 22px rgba(231,76,60,.22); }
+
+    .ctaBtn.secondary{
+      background:#fff;
+      color: var(--dark);
+      box-shadow: 0 14px 26px rgba(0,0,0,.18);
+      border: 1px solid rgba(0,0,0,.1);
+    }
+
+    .ctaStack{ display:flex; flex-direction:column; gap:10px; margin-top: 18px; max-width: 520px; }
+    .ctaMeta{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+    .ctaMeta .micro{ margin-top: 2px; }
+
+    .alert{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      padding: 12px 12px;
+      background: #fff;
+      border-radius: 14px;
+      border: 1px solid rgba(231,76,60,.22);
+    }
+    .alert .ico{
+      width: 28px; height: 28px;
+      border-radius: 10px;
+      background: rgba(231,76,60,.12);
+      display:grid; place-items:center;
+      color: var(--cta);
+      font-weight: 900;
+      font-family: Montserrat, sans-serif;
+      flex: 0 0 auto;
+    }
+    .alert p{ color: rgba(0,0,0,.68); font-size: 14px; }
+
+    /* Enemy section */
+    .bgLight{ background: var(--light); }
+    .cols{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      align-items:start;
+    }
+    .dataList{
+      display:grid;
+      gap:10px;
+      margin-top: 16px;
+    }
+    .dataItem{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.06);
+      border-radius: var(--radius);
+      padding: 12px 12px;
+      box-shadow: 0 10px 22px rgba(0,0,0,.06);
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .check{
+      width: 26px; height: 26px;
+      border-radius: 9px;
+      background: rgba(231,76,60,.12);
+      display:grid; place-items:center;
+      color: var(--cta);
+      font-weight: 900;
+      flex: 0 0 auto;
+      margin-top: 1px;
+    }
+    .dataItem p{ color: rgba(0,0,0,.70); font-size: 14px; }
+
+    /* Objections */
+    .cards3{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .card{
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.07);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .card p{ margin-top: 8px; font-size: 15px; color: rgba(0,0,0,.68); }
+
+    /* System section (black) */
+    .bgBlack{ background: var(--dark); color:#fff; }
+    .bgBlack h2, .bgBlack h3{ color:#fff; }
+    .bgBlack p{ color: rgba(255,255,255,.78); }
+    .steps{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .step{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow-2);
+    }
+    .stepTop{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .num{
+      width: 34px; height: 34px;
+      border-radius: 12px;
+      display:grid; place-items:center;
+      background: rgba(231,76,60,.18);
+      color: var(--cta);
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      border: 1px solid rgba(231,76,60,.28);
+      flex: 0 0 auto;
+    }
+
+    /* Exclusivity section */
+    .highlightDanger{
+      margin-top: 14px;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid rgba(231,76,60,.24);
+      padding: 14px;
+      box-shadow: 0 12px 26px rgba(0,0,0,.06);
+    }
+    .highlightDanger .tag{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      color: var(--cta);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      margin-bottom: 6px;
+    }
+    .highlightDanger p{ color: rgba(0,0,0,.70); font-size: 14px; }
+
+    /* Fit section */
+    .fitGrid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .fitCol{
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.07);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+    }
+    .fitCol h3{ margin-bottom: 8px; }
+    .bullets{ list-style:none; padding:0; margin:0; display:grid; gap:10px; }
+    .bullets li{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      color: rgba(0,0,0,.70);
+      font-size: 15px;
+    }
+
+    /* Final CTA section (red) */
+    .bgCta{
+      background: var(--cta);
+      color:#fff;
+    }
+    .bgCta h2{ color:#fff; }
+    .bgCta p{ color: rgba(255,255,255,.90); }
+    .finalBox{
+      border-radius: 22px;
+      padding: 22px;
+      background: rgba(0,0,0,.16);
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 18px 42px rgba(0,0,0,.22);
+    }
+    .finalActions{
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+      margin-top: 14px;
+      max-width: 520px;
+    }
+    .finalLink{
+      font-size: 13px;
+      opacity: .92;
+    }
+    .finalLink a{ text-decoration: underline; text-underline-offset: 3px; }
+
+    /* Footer */
+    footer{
+      background: var(--dark);
+      color: rgba(255,255,255,.72);
+      padding: 28px 0;
+      font-size: 13px;
+    }
+    .footGrid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    /* Sticky mobile CTA (conversion) */
+    .stickyCta{
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(0,0,0,.08);
+      padding: 10px 12px;
+      z-index: 50;
+    }
+    .stickyCta .wrap{ padding: 0; }
+    .stickyRow{
+      display:flex;
+      gap: 10px;
+      align-items:center;
+      justify-content: space-between;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .stickyText{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width: 0;
+    }
+    .stickyText .t1{
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      font-size: 12px;
+      color: var(--dark);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .stickyText .t2{
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .stickyBtn{
+      flex: 0 0 auto;
+      border-radius: 12px;
+      padding: 12px 12px;
+      background: var(--cta);
+      color:#fff;
+      border:none;
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      box-shadow: 0 12px 22px rgba(231,76,60,.20);
+      transition: transform .16s ease;
+    }
+    .stickyBtn:active{ transform: scale(.99); }
+
+    /* Fade-in */
+    .reveal{
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .reveal.in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Desktop enhancements */
+    @media (min-width: 860px){
+      .heroGrid{ grid-template-columns: 1.22fr .78fr; gap: 26px; align-items: center; }
+      .cols{ grid-template-columns: 1.1fr .9fr; }
+      .cards3{ grid-template-columns: repeat(3, 1fr); }
+      .steps{ grid-template-columns: repeat(3, 1fr); }
+      .fitGrid{ grid-template-columns: repeat(2, 1fr); }
+      .footGrid{ grid-template-columns: 1.2fr .8fr; align-items: end; }
+      .ctaBtn{ width: auto; }
+      .stickyCta{ display:none; }
+    }
+
+    /* Reduce motion */
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+      .ctaBtn, .reveal{ transition:none; }
+      .ctaBtn:hover{ transform:none; }
+    }
+
+    /* Prevent content hidden under sticky CTA on mobile */
+    .spacerForSticky{ height: 74px; }
+    @media (min-width: 860px){
+      .spacerForSticky{ height: 0; }
+    }
+  </style>
+
+  <!-- Schema: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Rodrigo Rocha • Gestor de Tráfego Pago",
+    "description": "Sistema previsível de aquisição de pacientes particulares para clínicas de estética de alto ticket (R$ 1.500+), com exclusividade por região e métricas claras.",
+    "areaServed": "Criciúma - SC, Brasil",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Criciúma",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "telephone": "+55 48 99929-1215",
+    "url": "https://seudominio.com",
+    "sameAs": [
+      "https://wa.me/5548999291215"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-  <h1>Funcionou! Seu site está no ar.</h1>
-  <p>Se você está vendo isso, o problema não é o Vercel, é só o HTML da LP.</p>
+  <!-- HERO -->
+  <header class="section hero" id="topo">
+    <div class="wrap heroGrid">
+      <div class="reveal">
+        <div class="kicker">
+          <span class="dot"></span>
+          <span>SISTEMA PREVISÍVEL • PACIENTES PARTICULARES • EXCLUSIVIDADE POR REGIÃO</span>
+        </div>
+
+        <h1>Como atrair pacientes particulares todos os meses sem depender de indicações ou convênios</h1>
+
+        <p class="lead" style="margin-top:12px;">
+          Implemento um sistema de aquisição previsível para clínicas de estética de alto ticket — <strong style="color:#1a1a1a;">Cirurgia Plástica</strong>, <strong style="color:#1a1a1a;">Harmonização Facial</strong>, <strong style="color:#1a1a1a;">Implante Capilar</strong>, <strong style="color:#1a1a1a;">Biomedicina Estética</strong>, <strong style="color:#1a1a1a;">Dentistas Estéticos</strong>, <strong style="color:#1a1a1a;">Dermatologistas</strong> e <strong style="color:#1a1a1a;">Clínicas de Estética Premium</strong> — tudo com ticket R$ 1.500+.
+          Você foca nos atendimentos, eu coloco sua recepção para agendar com previsibilidade.
+        </p>
+
+        <div class="authorityLine">
+          <strong>Gestão de Tráfego Pago</strong> • Especialista em Estética de Alto Ticket • <strong>Exclusividade por Região</strong>
+        </div>
+
+        <div class="ctaStack">
+          <a class="ctaBtn" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Quero%20solicitar%20uma%20an%C3%A1lise%20da%20minha%20cl%C3%ADnica%20para%20implantar%20um%20sistema%20previs%C3%ADvel%20de%20pacientes%20particulares." target="_blank" rel="noopener noreferrer">
+            SOLICITAR ANÁLISE DA MINHA CLÍNICA →
+          </a>
+
+          <div class="ctaMeta">
+            <span class="micro">Análise gratuita</span>
+            <span class="micro">•</span>
+            <span class="micro">Vagas limitadas por região</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="heroRight reveal">
+        <h3>Rodrigo Rocha</h3>
+        <p style="margin-top:6px;color:rgba(0,0,0,.70);">
+          Gestor de Tráfego Pago. Protocolo sob medida para dominar buscas locais no Google e capturar demanda com intenção real (sem “métricas de vaidade”).
+        </p>
+
+        <div class="pillRow" aria-label="Diferenciais">
+          <span class="pill">Foco: Particular (alto padrão)</span>
+          <span class="pill">Google Ads (pesquisa)</span>
+          <span class="pill">Meta Ads (autoridade)</span>
+          <span class="pill">Métricas: CAC & custo/agendamento</span>
+        </div>
+
+        <div class="alert" style="margin-top:14px;">
+          <div class="ico">⚠️</div>
+          <div>
+            <p><strong style="color:#1a1a1a;">Exclusividade geográfica:</strong> atendo apenas <strong style="color:#1a1a1a;">uma clínica por região</strong> para não encarecer o leilão e não competir comigo mesmo.</p>
+            <p class="micro" style="margin-top:6px;">Se sua região já tiver parceiro ativo, eu não abro exceção.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <!-- INIMIGO COMUM -->
+  <section class="section bgLight" id="inimigo">
+    <div class="wrap cols">
+      <div class="reveal">
+        <h2>O motivo pelo qual clínicas menores estão roubando seus pacientes particulares</h2>
+        <p class="lead" style="margin-top:12px;">
+          Você formou-se por anos, fez especializações, construiu reputação. Mas quando um paciente busca “implante capilar”, “cirurgia plástica” ou “harmonização facial” no Google,
+          quem aparece é a clínica do bairro vizinho que entende de marketing — não necessariamente a mais qualificada.
+          Isso é matemática do algoritmo. E pode ser corrigido com um protocolo.
+        </p>
+
+        <p class="lead" style="margin-top:12px;">
+          O inimigo comum é simples: profissionais excelentes perdem pacientes para concorrentes medianos que apenas sabem usar Instagram melhor.
+          A solução não é “postar mais”. É implantar um sistema de aquisição com intenção ativa (Google) + autoridade (Meta) + qualificação.
+        </p>
+      </div>
+
+      <div class="reveal">
+        <div class="dataList" aria-label="Dados e pontos de atenção">
+          <div class="dataItem">
+            <div class="check">✓</div>
+            <p>O alcance orgânico no Instagram vem caindo; estudos citados por plataformas do mercado apontam queda de 18% de 2023 para 2024, reforçando a necessidade de canais previsíveis de aquisição. </p>
+          </div>
+
+          <div class="dataItem">
+            <div class="check">✓</div>
+            <p>Se o seu ticket é alto, “custo por aquisição aceitável” precisa ser tratado como métrica de negócio; referências de mercado usam exemplos em que CPA para procedimento estético pode chegar a R$ 300 dependendo de margem e estratégia. </p>
+          </div>
+
+          <div class="dataItem">
+            <div class="check">✓</div>
+            <p>O paciente particular pesquisa, compara e busca sinais de segurança antes de decidir; por isso, posicionamento e consistência vencem improviso.</p>
+          </div>
+
+          <p class="micro" style="margin-top:10px;">
+            Observação: cada região tem dinâmica própria de leilão e demanda; por isso a análise é feita com dados reais da sua praça (Criciúma/SC ou onde você atua).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIVOT OBJEÇÕES -->
+  <section class="section" id="objecoes">
+    <div class="wrap reveal">
+      <h2>Antes de continuar, esclareço as 3 dúvidas que todo profissional tem:</h2>
+
+      <div class="cards3">
+        <article class="card">
+          <h3>JÁ CONTRATEI AGÊNCIA E NÃO DEU RETORNO</h3>
+          <p>
+            Compreendo perfeitamente. A maioria das agências foca em métricas de vaidade — curtidas, alcance, “conteúdo bonito”.
+            Meu trabalho não é ser agência de publicidade. Eu implemento um sistema de resposta direta.
+            O indicador de sucesso é: quantas pessoas entraram em contato e quantas sentaram na cadeira.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>MEDO DO CONSELHO PROFISSIONAL</h3>
+          <p>
+            Esse é exatamente o motivo pelo qual você precisa de um processo profissional.
+            Usamos campanhas de pesquisa no Google (paciente já buscando o procedimento) e Meta Ads baseadas em informação e autoridade.
+            Zero sensacionalismo, rigor ético total e posicionamento sob medida.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>NÃO TENHO TEMPO PARA GRAVAR CONTEÚDO</h3>
+          <p>
+            O objetivo é poupar seu tempo, não consumir mais.
+            Criamos funis que não dependem de produção diária. A base é intenção de busca + mensagens com protocolo + qualificação.
+            Sua clínica trabalha no automático enquanto você atende.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTEMA / MÉTODO CQV -->
+  <section class="section bgBlack" id="sistema">
+    <div class="wrap reveal">
+      <h2>O sistema que permite focar 100% nos atendimentos enquanto a recepção agenda automaticamente</h2>
+      <p class="lead" style="margin-top:12px;">
+        O Método CQV é um protocolo em 3 etapas. Ele não “depende de sorte”, nem de viralização.
+        Ele depende de execução e de métricas claras: CAC, custo por agendamento, taxa de comparecimento e taxa de fechamento.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="stepTop">
+            <div class="num">1</div>
+            <h3>ETAPA 1 — DOMÍNIO LOCAL</h3>
+          </div>
+          <p>
+            Configuração de campanhas no Google Ads para capturar intenção ativa.
+            Quando alguém busca “implante capilar preço”, “cirurgia plástica recuperação” ou “harmonização facial” na sua região, sua clínica aparece primeiro.
+            Exclusividade de raio: você é o único parceiro da área.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="stepTop">
+            <div class="num">2</div>
+            <h3>ETAPA 2 — QUALIFICAÇÃO INTELIGENTE</h3>
+          </div>
+          <p>
+            Formulários que filtram leads frios antes do primeiro contato + scripts de atendimento para sua equipe.
+            Seu tempo (e o do médico) só é gasto com quem tem intenção real e capacidade de pagar.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="stepTop">
+            <div class="num">3</div>
+            <h3>ETAPA 3 — MÉTRICAS DE NEGÓCIO</h3>
+          </div>
+          <p>
+            Acompanhamento semanal de CAC por especialidade, taxa de comparecimento e custo por agendamento.
+            Dados claros para tomada de decisão. Previsibilidade científica, sem promessas vazias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXCLUSIVIDADE / URGÊNCIA -->
+  <section class="section bgLight" id="exclusividade">
+    <div class="wrap cols">
+      <div class="reveal">
+        <h2>Por que trabalho com exclusividade de região</h2>
+        <p class="lead" style="margin-top:12px;">
+          Como o trabalho exige dominar as buscas locais no Google e a atenção no Meta na sua região,
+          não posso atender duas clínicas do mesmo nicho no mesmo bairro.
+          Isso seria competir contra mim mesmo no leilão e encarecer seu custo por paciente.
+        </p>
+
+        <div class="highlightDanger">
+          <div class="tag">⚠️ Aviso</div>
+          <p>
+            Se você não fechar, o concorrente do bairro vizinho pode ficar com a vaga.
+            Eu protejo a exclusividade do parceiro — e isso é parte do protocolo.
+          </p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="card" style="background:#fff;">
+          <h3>O que você ganha com isso</h3>
+          <p style="margin-top:8px;">
+            Você não compra “tráfego”. Você compra proteção de posição: previsibilidade de aquisição e estabilidade de leilão.
+            É a ponte para parar de depender de convênios e indicações — sem arrogância, sem atalhos.
+          </p>
+
+          <div class="pillRow" style="margin-top:14px;">
+            <span class="pill">Protocolo sob medida</span>
+            <span class="pill">Compromisso com métricas</span>
+            <span class="pill">Sem conflito de interesse</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- É PARA VOCÊ -->
+  <section class="section" id="fit">
+    <div class="wrap reveal">
+      <h2>É para você se</h2>
+      <p class="lead" style="margin-top:12px;">
+        Menos é mais: eu trabalho com poucos parceiros, com processo claro e cobrança de padrão.
+        Se você quer previsibilidade e aceita tratar isso como investimento, seguimos.
+      </p>
+
+      <div class="fitGrid">
+        <div class="fitCol">
+          <h3>✅ É PRA VOCÊ SE:</h3>
+          <ul class="bullets">
+            <li><span class="check">✓</span><span>É clínica de Cirurgia Plástica, Implante Capilar, Harmonização Facial, Dermatologia, Biomedicina Estética, Dentistas Estéticos ou Estética Premium.</span></li>
+            <li><span class="check">✓</span><span>Trabalha com procedimentos de R$ 1.500+ (alto ticket).</span></li>
+            <li><span class="check">✓</span><span>Quer parar de depender de convênios e indicações.</span></li>
+            <li><span class="check">✓</span><span>Tem equipe que responde leads em até 2 horas.</span></li>
+            <li><span class="check">✓</span><span>Entende que tráfego pago é investimento, não custo.</span></li>
+          </ul>
+        </div>
+
+        <div class="fitCol">
+          <h3>❌ NÃO É PRA VOCÊ SE:</h3>
+          <ul class="bullets">
+            <li><span class="check">✓</span><span>Busca “resultado mágico em 7 dias”.</span></li>
+            <li><span class="check">✓</span><span>Quer começar com “R$ 500 para testar”.</span></li>
+            <li><span class="check">✓</span><span>Procura curso ou mentoria (eu EXECUTO, não ensino).</span></li>
+          </ul>
+          <p class="micro" style="margin-top:12px;">
+            Meu trabalho exige rotina de acompanhamento e disciplina operacional na recepção. Sem isso, o sistema não performa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section bgCta" id="contato">
+    <div class="wrap reveal">
+      <div class="finalBox">
+        <h2>Podemos iniciar a implementação na próxima semana?</h2>
+        <p class="lead" style="margin-top:10px;max-width:70ch;">
+          Estou selecionando o parceiro ideal para esta região. Adoraria que fosse sua clínica.
+          Se fizer sentido, me chame no WhatsApp e eu explico o protocolo, o que preciso de você e quais métricas vamos acompanhar.
+        </p>
+
+        <div class="finalActions">
+          <a class="ctaBtn secondary" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Tenho%20interesse%20na%20exclusividade%20da%20minha%20regi%C3%A3o%20e%20quero%20entender%20o%20protocolo%20(CQV)%20com%20m%C3%A9tricas%20de%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer">
+            FALAR COM RODRIGO NO WHATSAPP →
+          </a>
+          <div class="finalLink">
+            Link direto: <a href="https://wa.me/5548999291215" target="_blank" rel="noopener noreferrer">wa.me/5548999291215</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footGrid">
+      <div>
+        <div style="font-family:Montserrat,sans-serif;font-weight:900;color:#fff;">Rodrigo Rocha • Gestor de Tráfego Pago</div>
+        <div style="margin-top:6px;">
+          Especialista em Estética de Alto Ticket • Cirurgia Plástica • Implante Capilar • Harmonização • Dermatologia • Biomedicina Estética • Dentistas Estéticos • Estética Premium
+        </div>
+      </div>
+      <div style="text-align:left;">
+        <div>Certificado Meta Blueprint • Google Ads</div>
+        <div style="margin-top:6px;">SC | Criciúma</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="spacerForSticky" aria-hidden="true"></div>
+
+  <!-- Sticky CTA (mobile) -->
+  <div class="stickyCta" role="region" aria-label="Chamada para ação fixa">
+    <div class="wrap">
+      <div class="stickyRow">
+        <div class="stickyText">
+          <div class="t1">Exclusividade por região</div>
+          <div class="t2">Solicite análise (WhatsApp)</div>
+        </div>
+        <a class="stickyBtn" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Quero%20solicitar%20uma%20an%C3%A1lise%20da%20minha%20cl%C3%ADnica." target="_blank" rel="noopener noreferrer">
+          Solicitar →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Minimal reveal animation (fast + lightweight)
+    (function(){
+      const els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(el => el.classList.add('in'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('in');
+        });
+      }, { threshold: 0.12 });
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+
+  <!-- Notes:
+    - Mantenha o vermelho coral (#e74c3c) apenas em CTAs/checks/alertas para respeitar 80/15/5.
+    - Troque "https://seudominio.com" e "og.jpg" quando publicar.
+  -->
 </body>
 </html>
