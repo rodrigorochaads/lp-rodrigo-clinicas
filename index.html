@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Rodrigo Rocha | Sistema previsível de pacientes particulares</title>
-  <meta name="description" content="Sistema previsível de aquisição de pacientes particulares para clínicas premium. Exclusividade por praça. Métricas claras: CAC e custo por agendamento." />
+  <meta name="description" content="Sistema previsível de aquisição de pacientes particulares para clínicas premium/high ticket. Exclusividade por praça. Métricas claras: CAC e custo por agendamento." />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0A192F" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Rodrigo Rocha | Sistema previsível de pacientes particulares" />
-  <meta property="og:description" content="Como atrair pacientes particulares todos os meses sem depender de indicações ou convênios. Exclusividade por praça. Métricas claras." />
+  <meta property="og:description" content="Aquisição previsível para clínicas premium. Exclusividade por praça. Métricas claras." />
   <meta property="og:type" content="website" />
 
   <!-- Fonts (Google Fonts) -->
@@ -395,66 +395,6 @@
     .niche h3{ margin:0 0 2px; }
     .niche p{ color: rgba(0,0,0,.62); font-size: 14px; }
 
-    /* Enemy section layout */
-    .twoCol{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      align-items:start;
-    }
-    .marketGrid{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 12px;
-      margin-top: 16px;
-    }
-    .metric{
-      background: #fff;
-      border: 1px solid rgba(0,0,0,.08);
-      border-radius: var(--radius);
-      padding: 16px;
-      box-shadow: var(--shadowSoft);
-    }
-    .metric .big{
-      font-family: Montserrat, sans-serif;
-      font-weight: 900;
-      font-size: clamp(40px, 9vw, 44px);
-      letter-spacing: -0.02em;
-      color: var(--gold);
-      line-height: 1;
-    }
-    .metric .label{
-      margin-top: 8px;
-      color: rgba(0,0,0,.68);
-      font-size: 14px;
-    }
-    .warnIconBox{
-      background: #fff;
-      border: 1px solid rgba(0,0,0,.08);
-      border-radius: var(--radius2);
-      box-shadow: var(--shadowSoft);
-      padding: 18px;
-      overflow:hidden;
-      position: relative;
-      min-width: 0;
-    }
-    .warnIconBox::before{
-      content:"";
-      position:absolute;
-      inset:-40px -40px auto auto;
-      width: 140px;
-      height: 140px;
-      background: radial-gradient(circle at 30% 30%, rgba(184,134,11,.30), transparent 60%);
-      transform: rotate(18deg);
-    }
-    .warnSvg{
-      width: 100%;
-      height: auto;
-      display:block;
-      margin-top: 10px;
-      opacity: .95;
-    }
-
     /* Objections */
     .grid3{
       display:grid;
@@ -505,7 +445,7 @@
       flex: 0 0 auto;
     }
 
-    /* Method timeline (vertical) */
+    /* Method timeline */
     .timeline{
       margin-top: 22px;
       position: relative;
@@ -529,9 +469,7 @@
       border: 1px solid rgba(255,255,255,.10);
       border-radius: var(--radius);
       box-shadow: 0 18px 46px rgba(0,0,0,.22);
-      padding-top: 16px;
-      padding-right: 16px;
-      padding-bottom: 16px;
+      padding: 16px;
       min-width: 0;
     }
     .step .badge{
@@ -611,36 +549,7 @@
     .workCard h3{ color:#fff; margin:0; }
     .workCard p{ color: rgba(255,255,255,.80); }
 
-    /* Exclusivity gold section */
-    .locRow{
-      display:flex;
-      gap: 12px;
-      align-items:flex-start;
-      margin-top: 14px;
-      flex-direction: column;
-    }
-    .locIcon{
-      width: 46px; height: 46px;
-      border-radius: 18px;
-      display:grid; place-items:center;
-      background: rgba(255,255,255,.14);
-      border: 1px solid rgba(255,255,255,.18);
-      flex: 0 0 auto;
-    }
-    .locIcon svg{ width: 22px; height: 22px; fill: #fff; opacity: .95; }
-
-    .goldCallout{
-      margin-top: 14px;
-      padding: 14px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,.22);
-      background: rgba(0,0,0,.18);
-      box-shadow: 0 18px 46px rgba(0,0,0,.22);
-      font-size: 15px;
-    }
-    .goldCallout strong{ color:#fff; }
-
-    /* Fit section */
+    /* Fit */
     .fitGrid{
       display:grid;
       grid-template-columns: 1fr;
@@ -880,7 +789,7 @@
     }
     .badge svg{ width: 22px; height: 22px; fill: rgba(255,255,255,.88); }
 
-    /* Scroll reveal (CSS-only, progressive enhancement) */
+    /* Scroll reveal */
     .reveal{ opacity: 1; transform: none; }
     @supports (animation-timeline: view()){
       .reveal{
@@ -890,16 +799,13 @@
         animation-timeline: view();
         animation-range: entry 20% cover 35%;
       }
-      @keyframes reveal{
-        to{ opacity: 1; transform: translateY(0); }
-      }
+      @keyframes reveal{ to{ opacity: 1; transform: translateY(0); } }
     }
 
     /* Mobile */
     @media (max-width: 520px){
       .btn{ width: 100%; }
       .heroActions{ max-width: 100%; }
-      .metric .big{ font-size: 52px; }
       .kicker{ letter-spacing: .09em; }
     }
 
@@ -909,14 +815,11 @@
       .btn{ width: auto; }
       .heroGrid{ grid-template-columns: 1.2fr .8fr; gap: 22px; align-items: start; }
       .grid6{ grid-template-columns: repeat(3, 1fr); }
-      .twoCol{ grid-template-columns: 1.15fr .85fr; gap: 22px; align-items: start; }
-      .marketGrid{ grid-template-columns: repeat(3, 1fr); }
       .grid3{ grid-template-columns: repeat(3, 1fr); }
       .workGrid{ grid-template-columns: repeat(3, 1fr); }
       .fitGrid{ grid-template-columns: repeat(2, 1fr); }
       .diffGrid{ grid-template-columns: repeat(3, 1fr); }
       .footGrid{ grid-template-columns: 1.2fr .8fr; align-items: end; }
-      .locRow{ flex-direction: row; }
       .lastBox{ grid-template-columns: 1fr auto; }
     }
 
@@ -930,6 +833,11 @@
 </head>
 
 <body>
+  <!-- CONFIG -->
+  <!-- WhatsApp curto (sem texto gigante) -->
+  <!-- Use sempre este mesmo link -->
+  <!-- https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade. -->
+
   <!-- HERO -->
   <header class="hero" id="topo" role="banner">
     <div class="container">
@@ -939,12 +847,11 @@
           <div class="role">Gestor Estratégico de Aquisição • Clínicas Premium</div>
         </div>
 
-        <!-- Top CTA -->
         <a class="btn btn-outline topCta"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer"
-           aria-label="Responder 3 perguntas e verificar exclusividade">
-          WhatsApp • Responder 3 perguntas →
+           aria-label="Verificar exclusividade na minha cidade">
+          Verificar exclusividade na minha cidade →
         </a>
       </div>
 
@@ -955,12 +862,12 @@
             <span>SISTEMA PREVISÍVEL • PACIENTES PARTICULARES • EXCLUSIVIDADE POR PRAÇA</span>
           </div>
 
-          <h1>Como atrair pacientes particulares todos os meses sem depender de indicações ou convênios</h1>
+          <h1>Pare de perder pacientes particulares de Implante Capilar, Lipo HD e Facetas para clínicas menores com processo melhor</h1>
 
           <div class="spacer12"></div>
           <p class="lead subtle">
-            Implemento um sistema de aquisição previsível para clínicas premium/high ticket (ex.: <strong style="color:#fff;">Implante Capilar</strong>, <strong style="color:#fff;">Cirurgia Plástica</strong>, <strong style="color:#fff;">Odonto Estética (Facetas)</strong>, <strong style="color:#fff;">Dermatologia</strong>, <strong style="color:#fff;">Biomedicina Estética</strong>).
-            Você foca nos atendimentos, eu organizo campanhas + qualificação + rotina da recepção para agendar com previsibilidade.
+            Eu opero aquisição de pacientes particulares com foco em 2 coisas: (1) campanhas para capturar demanda e (2) protocolo de recepção para converter rápido no WhatsApp.
+            Sem prometer resultado — com processo, mensuração e otimização semanal.
           </p>
 
           <div class="spacer18"></div>
@@ -972,9 +879,9 @@
 
           <div class="heroActions">
             <a class="btn btn-gold"
-               href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+               href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
                target="_blank" rel="noopener noreferrer">
-              WhatsApp • Responder 3 perguntas →
+              Verificar exclusividade na minha cidade →
             </a>
 
             <div class="metaRow micro">
@@ -1004,7 +911,7 @@
 
           <div class="spacer12"></div>
           <a class="btn btn-gold"
-             href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+             href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
              target="_blank" rel="noopener noreferrer">
             Verificar exclusividade agora →
           </a>
@@ -1012,6 +919,55 @@
       </div>
     </div>
   </header>
+
+  <!-- PREJUÍZO / VAZAMENTO -->
+  <section class="bg-white" id="prejuizo">
+    <div class="container reveal">
+      <div class="center">
+        <h2>Onde o seu lucro está escoando</h2>
+        <p class="lead" style="margin:12px auto 0; color: var(--muted);">
+          Em alto ticket, normalmente não é “falta de lead”. É lead caro + demora + ausência de protocolo.
+          Eu entro para fechar o vazamento: mensagem, qualificação e rotina.
+        </p>
+      </div>
+
+      <div class="grid3" style="margin-top:18px;">
+        <article class="card hoverlift">
+          <div class="objTitle">Tempo de resposta</div>
+          <p style="color: rgba(0,0,0,.70);">
+            Lead quente esfria rápido. Se a recepção demora, você paga para perder.
+          </p>
+        </article>
+
+        <article class="card hoverlift">
+          <div class="objTitle">Script e follow-up</div>
+          <p style="color: rgba(0,0,0,.70);">
+            Sem perguntas certas e follow-up, você lota o WhatsApp de curiosos e perde o perfil ideal.
+          </p>
+        </article>
+
+        <article class="card hoverlift">
+          <div class="objTitle">Mensuração</div>
+          <p style="color: rgba(0,0,0,.70);">
+            Sem registrar lead → conversa → agendamento → comparecimento, você otimiza “no escuro”.
+          </p>
+        </article>
+      </div>
+
+      <div class="spacer18"></div>
+      <div class="center">
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
+           target="_blank" rel="noopener noreferrer">
+          Fazer diagnóstico da minha recepção →
+        </a>
+        <div class="spacer10"></div>
+        <p class="micro" style="color: rgba(0,0,0,.60); margin:0;">
+          Eu faço 3 perguntas, verifico a praça e digo se faz sentido.
+        </p>
+      </div>
+    </div>
+  </section>
 
   <!-- O QUE VOCÊ RECEBE EM 14 DIAS -->
   <section class="bg-white" id="14-dias">
@@ -1027,27 +983,27 @@
       <div class="grid3" aria-label="Entregáveis dos primeiros 14 dias">
         <article class="card hoverlift">
           <div class="objTitle">Recepção</div>
-          <p style="color: rgba(0,0,0,.70);">Checklist operacional da recepção + tempos de resposta recomendados para não perder leads no WhatsApp e telefone.</p>
+          <p style="color: rgba(0,0,0,.70);">Checklist operacional + tempos de resposta recomendados para não perder leads.</p>
         </article>
         <article class="card hoverlift">
           <div class="objTitle">Script</div>
-          <p style="color: rgba(0,0,0,.70);">Script de atendimento e follow-up (WhatsApp, ligação e direct) com perguntas de qualificação e tratamento de objeções.</p>
+          <p style="color: rgba(0,0,0,.70);">Script e follow-up (WhatsApp/ligação/direct) com perguntas de qualificação.</p>
         </article>
         <article class="card hoverlift">
           <div class="objTitle">Funil</div>
-          <p style="color: rgba(0,0,0,.70);">Mapa de campanhas (Meta Ads + Google Ads + Google Business Profile), por serviços âncora e objetivos, para você saber onde cada real está indo.</p>
+          <p style="color: rgba(0,0,0,.70);">Mapa de campanhas (Meta + Google + Maps) por procedimento âncora e objetivo.</p>
         </article>
         <article class="card hoverlift">
           <div class="objTitle">Criativos</div>
-          <p style="color: rgba(0,0,0,.70);">Plano inicial de criativos (30 dias): temas, ângulos e formatos; eu entrego copy/roteiros e direção para sua equipe gravar o básico.</p>
+          <p style="color: rgba(0,0,0,.70);">Plano de criativos (30 dias): temas, ângulos, formatos; copy/roteiros.</p>
         </article>
         <article class="card hoverlift">
           <div class="objTitle">Google Maps</div>
-          <p style="color: rgba(0,0,0,.70);">Auditoria do Google Business Profile (categorias, descrição, serviços, fotos, posts e avaliações) + lista priorizada de ajustes.</p>
+          <p style="color: rgba(0,0,0,.70);">Auditoria do Google Business Profile + lista priorizada de ajustes.</p>
         </article>
         <article class="card hoverlift">
           <div class="objTitle">Métricas</div>
-          <p style="color: rgba(0,0,0,.70);">Plano de mensuração (30 dias): leads, custo por lead, agendamentos, taxa de comparecimento e como registrar sem complicação.</p>
+          <p style="color: rgba(0,0,0,.70);">Plano de mensuração (30 dias): lead, conversa, agendamento e comparecimento.</p>
         </article>
       </div>
 
@@ -1062,9 +1018,9 @@
       <div class="spacer18"></div>
       <div class="center">
         <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer">
-          WhatsApp • Responder 3 perguntas e verificar exclusividade →
+          Verificar exclusividade na minha cidade →
         </a>
         <div class="spacer10"></div>
         <p class="micro" style="color: rgba(0,0,0,.60); margin:0;">Se sua praça já tiver parceiro ativo, eu não abro exceção.</p>
@@ -1135,102 +1091,15 @@
       <div class="spacer18"></div>
       <div class="center">
         <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer">
-          WhatsApp • Responder 3 perguntas →
+          Verificar exclusividade na minha cidade →
         </a>
       </div>
     </div>
   </section>
 
-  <!-- INIMIGO COMUM -->
-  <section class="bg-soft" id="inimigo">
-    <div class="container twoCol">
-      <div class="reveal">
-        <h2>O motivo pelo qual clínicas menores estão roubando seus pacientes particulares</h2>
-        <div class="spacer12"></div>
-
-        <p class="lead" style="color: var(--muted);">
-          Você construiu reputação. Mas quando um paciente busca no Google, quem aparece é quem domina mídia + processo de atendimento.
-          Isso pode ser corrigido com um protocolo.
-        </p>
-
-        <div class="spacer18"></div>
-        <div class="card hoverlift">
-          <h3>O inimigo comum</h3>
-          <p style="color: rgba(0,0,0,.70); margin-top:8px;">
-            Profissionais excelentes perdem pacientes para concorrentes medianos que apenas operam marketing melhor.
-            A solução não é “postar mais”. É intenção (Google/Maps) + autoridade (Meta) + qualificação + rotina na recepção.
-          </p>
-        </div>
-
-        <div class="marketGrid" aria-label="Pontos de atenção">
-          <div class="metric hoverlift">
-            <div class="big">Meta</div>
-            <div class="label">Gera demanda e autoridade — mas exige mensagem e triagem.</div>
-          </div>
-          <div class="metric hoverlift">
-            <div class="big">Google</div>
-            <div class="label">Captura intenção ativa — mas precisa estrutura e mensuração.</div>
-          </div>
-          <div class="metric hoverlift">
-            <div class="big">Recepção</div>
-            <div class="label">Se não responde e acompanha, o investimento vaza.</div>
-          </div>
-        </div>
-
-        <p class="micro" style="margin-top:10px;">
-          Observação: cada praça tem dinâmica própria; o diagnóstico é feito com dados da sua região e estrutura.
-        </p>
-      </div>
-
-      <aside class="warnIconBox reveal" aria-label="Ilustração">
-        <h3>Quando o paciente procura, o algoritmo decide</h3>
-        <p style="color: rgba(0,0,0,.70);">
-          Se você não aparece no momento de intenção, você perde para quem aparece — mesmo sendo menos qualificado.
-        </p>
-
-        <svg class="warnSvg" viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ícone de alerta com gráfico de crescimento">
-          <defs>
-            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#4A90E2" stop-opacity="0.25"/>
-              <stop offset="1" stop-color="#B8860B" stop-opacity="0.20"/>
-            </linearGradient>
-          </defs>
-          <rect x="0" y="0" width="640" height="340" rx="22" fill="url(#g1)" />
-          <g opacity="0.92">
-            <path d="M60 250 L180 210 L290 230 L410 160 L560 120" fill="none" stroke="#B8860B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="60" cy="250" r="7" fill="#B8860B"/>
-            <circle cx="180" cy="210" r="7" fill="#B8860B"/>
-            <circle cx="290" cy="230" r="7" fill="#B8860B"/>
-            <circle cx="410" cy="160" r="7" fill="#B8860B"/>
-            <circle cx="560" cy="120" r="7" fill="#B8860B"/>
-          </g>
-          <g transform="translate(42,42)">
-            <path d="M48 12 L84 12 L66 44 Z" fill="#B8860B" opacity="0.95"/>
-            <rect x="63" y="18" width="6" height="14" rx="3" fill="#0A192F"/>
-            <rect x="63" y="34" width="6" height="6" rx="3" fill="#0A192F"/>
-          </g>
-          <g opacity="0.18">
-            <path d="M0 300 H640" stroke="#000" stroke-width="2"/>
-            <path d="M80 0 V340" stroke="#000" stroke-width="2"/>
-            <path d="M240 0 V340" stroke="#000" stroke-width="2"/>
-            <path d="M400 0 V340" stroke="#000" stroke-width="2"/>
-            <path d="M560 0 V340" stroke="#000" stroke-width="2"/>
-          </g>
-        </svg>
-
-        <div class="spacer12"></div>
-        <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
-           target="_blank" rel="noopener noreferrer">
-          WhatsApp • Responder 3 perguntas →
-        </a>
-      </aside>
-    </div>
-  </section>
-
-  <!-- 3 OBJEÇÕES -->
+  <!-- OBJEÇÕES -->
   <section class="bg-white" id="objecoes">
     <div class="container reveal">
       <div class="center">
@@ -1247,8 +1116,7 @@
             <div>
               <div class="objTitle">Já contratei agência e não deu retorno</div>
               <p style="color: rgba(0,0,0,.70);">
-                A maioria das agências foca em métricas de vaidade. Aqui o foco é rotina de aquisição + atendimento,
-                com indicadores claros: custo por lead, custo por agendamento e CAC.
+                Aqui o foco é rotina de aquisição + atendimento, com indicadores claros: custo por lead, custo por agendamento e CAC (quando aplicável).
               </p>
               <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Foco em agenda e negócio.</span></div>
             </div>
@@ -1274,7 +1142,7 @@
             <div>
               <div class="objTitle">Não tenho tempo para gravar conteúdo</div>
               <p style="color: rgba(0,0,0,.70);">
-                O objetivo é poupar seu tempo. Criamos um plano de criativos e roteiros enxutos; o núcleo do resultado vem de intenção + qualificação + rotina na recepção.
+                O núcleo do resultado vem de intenção + qualificação + rotina na recepção; criativos e roteiros entram com um plano enxuto.
               </p>
               <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Sistema orientado à intenção, não a “postar todo dia”.</span></div>
             </div>
@@ -1298,10 +1166,7 @@
         <div class="step hoverlift">
           <div class="badge">1</div>
           <h3>ETAPA 1 — INTENÇÃO</h3>
-          <p>
-            Campanhas para capturar demanda com intenção real (Google/Maps) e complementar com Meta para autoridade.
-            A ideia é parar de depender de sorte e começar a comprar demanda de forma controlada.
-          </p>
+          <p>Campanhas para capturar demanda com intenção real e complementar com Meta para autoridade.</p>
           <div class="miniChecks" aria-label="Checks da etapa 1">
             <span><i>✓</i>Intenção ativa.</span>
             <span><i>✓</i>Foco por procedimento.</span>
@@ -1312,9 +1177,7 @@
         <div class="step hoverlift">
           <div class="badge">2</div>
           <h3>ETAPA 2 — QUALIFICAÇÃO</h3>
-          <p>
-            Mensagens, perguntas e follow-up para filtrar curiosos e acelerar agendamento com quem tem perfil.
-          </p>
+          <p>Mensagens, perguntas e follow-up para filtrar curiosos e acelerar agendamento com quem tem perfil.</p>
           <div class="miniChecks" aria-label="Checks da etapa 2">
             <span><i>✓</i>3 perguntas no WhatsApp.</span>
             <span><i>✓</i>Script para recepção.</span>
@@ -1325,9 +1188,7 @@
         <div class="step hoverlift">
           <div class="badge">3</div>
           <h3>ETAPA 3 — MÉTRICAS</h3>
-          <p>
-            Otimização semanal com dados: custo por lead, custo por agendamento, CAC (quando possível) e ajustes de funil.
-          </p>
+          <p>Otimização semanal com dados: custo por lead, custo por agendamento e ajustes de funil.</p>
           <div class="miniChecks" aria-label="Checks da etapa 3">
             <span><i>✓</i>Rotina de otimização.</span>
             <span><i>✓</i>Decisão por dados.</span>
@@ -1339,7 +1200,7 @@
       <div class="spacer18"></div>
       <div class="center">
         <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer">
           Ver o passo a passo do protocolo →
         </a>
@@ -1379,16 +1240,16 @@
             <div class="workBadge">4+</div>
             <h3>Semana 4+ — Otimização</h3>
           </div>
-          <p>Otimizações semanais com dados para reduzir custo e aumentar agendamentos qualificados.</p>
+          <p>Otimizações semanais para reduzir custo e aumentar agendamentos qualificados.</p>
         </div>
       </div>
 
       <div class="spacer18"></div>
       <div class="center">
         <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer">
-          WhatsApp • Responder 3 perguntas →
+          Verificar exclusividade na minha cidade →
         </a>
       </div>
     </div>
@@ -1406,30 +1267,13 @@
         </p>
       </div>
 
-      <div class="locRow" aria-label="Exclusividade">
-        <div class="locIcon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2c3.866 0 7 3.134 7 7 0 5.25-7 13-7 13S5 14.25 5 9c0-3.866 3.134-7 7-7zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5z"/>
-          </svg>
-        </div>
-
-        <div>
-          <h3 style="color:#fff; margin:0;">Exclusividade protege seu investimento</h3>
-          <p style="color: rgba(255,255,255,.92); margin-top:8px;">
-            Eu protejo a exclusividade do parceiro — e isso é parte do protocolo.
-          </p>
-
-          <div class="goldCallout" role="note">
-            <strong>Alerta:</strong> Se sua praça já estiver fechada, eu não abro exceção.
-          </div>
-
-          <div class="spacer12"></div>
-          <a class="btn btn-outline"
-             href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
-             target="_blank" rel="noopener noreferrer">
-            Verificar exclusividade agora →
-          </a>
-        </div>
+      <div class="spacer18"></div>
+      <div class="center">
+        <a class="btn btn-outline"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
+           target="_blank" rel="noopener noreferrer">
+          Verificar exclusividade agora →
+        </a>
       </div>
     </div>
   </section>
@@ -1536,9 +1380,9 @@
       <div class="spacer18"></div>
       <div class="center">
         <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer">
-          WhatsApp • Responder 3 perguntas →
+          Verificar exclusividade na minha cidade →
         </a>
       </div>
     </div>
@@ -1549,9 +1393,7 @@
     <div class="container reveal">
       <div class="center">
         <h2>FAQ</h2>
-        <p class="lead" style="margin:12px auto 0; color: var(--muted);">
-          Respostas diretas, sem “marketing de palco”.
-        </p>
+        <p class="lead" style="margin:12px auto 0; color: var(--muted);">Respostas diretas.</p>
       </div>
 
       <div class="faq" aria-label="Perguntas frequentes">
@@ -1582,17 +1424,7 @@
             <span class="faqIcon" aria-hidden="true">+</span>
           </summary>
           <div class="faqBody">
-            Existe curva de aprendizado e ajustes. O objetivo é construir previsibilidade: primeiro estabilizamos o fluxo de contatos/agendamentos e, depois, otimizamos com dados semanais.
-          </div>
-        </details>
-
-        <details>
-          <summary>
-            <span>E se eu já tenho agência?</span>
-            <span class="faqIcon" aria-hidden="true">+</span>
-          </summary>
-          <div class="faqBody">
-            Normal. O diagnóstico mostra se o problema é estratégia, execução, mensuração, qualificação ou atendimento. Se fizer sentido, eu assumo a operação com foco em agenda e cadeira.
+            Existe curva de aprendizado e ajustes. O objetivo é construir previsibilidade: primeiro estabilizamos o fluxo e, depois, otimizamos com dados semanais.
           </div>
         </details>
 
@@ -1610,7 +1442,7 @@
       <div class="spacer18"></div>
       <div class="center">
         <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer">
           Verificar minha praça agora →
         </a>
@@ -1630,9 +1462,9 @@
         <div class="spacer18"></div>
         <div class="center">
           <a class="btn btn-gold pulse"
-             href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+             href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
              target="_blank" rel="noopener noreferrer" style="max-width:640px;">
-            WhatsApp • Responder 3 perguntas →
+            Verificar exclusividade na minha cidade →
           </a>
           <div class="spacer12"></div>
           <p class="micro" style="color: rgba(255,255,255,.78);">
@@ -1656,7 +1488,7 @@
         </div>
 
         <a class="btn btn-gold"
-           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%20Rodrigo%2C%20quero%20verificar%20a%20disponibilidade%20para%20minha%20cidade."
            target="_blank" rel="noopener noreferrer" style="max-width: 520px;">
           Verificar minha praça agora →
         </a>
