@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Rodrigo Rocha | Sistema previsível de pacientes particulares</title>
-  <meta name="description" content="Sistema previsível de aquisição de pacientes particulares para clínicas de estética de alto ticket. Exclusividade por região. Métricas claras: CAC e custo por agendamento." />
+  <meta name="description" content="Sistema previsível de aquisição de pacientes particulares para clínicas premium. Exclusividade por praça. Métricas claras: CAC e custo por agendamento." />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0A192F" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Rodrigo Rocha | Sistema previsível de pacientes particulares" />
-  <meta property="og:description" content="Como atrair pacientes particulares todos os meses sem depender de indicações ou convênios. Exclusividade por região. Métricas claras." />
+  <meta property="og:description" content="Como atrair pacientes particulares todos os meses sem depender de indicações ou convênios. Exclusividade por praça. Métricas claras." />
   <meta property="og:type" content="website" />
 
   <!-- Fonts (Google Fonts) -->
@@ -24,8 +24,8 @@
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
-    "name":"Rodrigo Rocha • Gestor de Tráfego",
-    "description":"Sistema previsível de aquisição de pacientes particulares para clínicas de estética de alto ticket, com exclusividade por região e métricas claras (CAC e custo por agendamento).",
+    "name":"Rodrigo Rocha • Gestor Estratégico de Aquisição",
+    "description":"Sistema previsível de aquisição de pacientes particulares para clínicas premium/high ticket, com exclusividade por praça e métricas claras (CAC e custo por agendamento).",
     "areaServed":"SC, Brasil",
     "address":{"@type":"PostalAddress","addressLocality":"Criciúma","addressRegion":"SC","addressCountry":"BR"},
     "telephone":"+55 48 99929-1215",
@@ -180,7 +180,7 @@
       border-radius: var(--radius);
       box-shadow: var(--shadowSoft);
       padding: 18px;
-      min-width: 0; /* prevents grid overflow */
+      min-width: 0;
     }
     .card.soft{
       background: var(--soft);
@@ -332,6 +332,7 @@
     }
     .floatCard h3{ color: var(--ink); margin-bottom: 6px; }
     .floatCard p{ color: rgba(0,0,0,.70); }
+
     .floatList{
       margin: 12px 0 0;
       padding: 0;
@@ -573,7 +574,7 @@
       flex: 0 0 auto;
     }
 
-    /* Work with me (new) */
+    /* Work with me */
     .workGrid{
       display:grid;
       grid-template-columns: 1fr;
@@ -687,7 +688,7 @@
     .bullets .ok{ background: rgba(46,204,113,.12); border: 1px solid rgba(46,204,113,.22); color: #2ecc71; }
     .bullets .no{ background: rgba(231,76,60,.12); border: 1px solid rgba(231,76,60,.22); color: rgba(231,76,60,.95); }
 
-    /* Differentials (new) */
+    /* Differentials */
     .diffGrid{
       display:grid;
       grid-template-columns: 1fr;
@@ -729,7 +730,7 @@
     }
     .logoPill svg{ width: 22px; height: 22px; fill: rgba(0,0,0,.82); }
 
-    /* FAQ (new) */
+    /* FAQ */
     .faq{
       margin-top: 18px;
       display:grid;
@@ -805,7 +806,7 @@
       100%{ transform: scale(1); box-shadow: 0 16px 34px rgba(184,134,11,.30); }
     }
 
-    /* Last chance banner (new) */
+    /* Last chance banner */
     .lastChance{
       padding: 26px 0;
       background:
@@ -894,11 +895,11 @@
       }
     }
 
-    /* Mobile improvements */
+    /* Mobile */
     @media (max-width: 520px){
       .btn{ width: 100%; }
       .heroActions{ max-width: 100%; }
-      .metric .big{ font-size: 52px; } /* bigger numbers on mobile */
+      .metric .big{ font-size: 52px; }
       .kicker{ letter-spacing: .09em; }
     }
 
@@ -935,10 +936,14 @@
       <div class="topline reveal">
         <div class="brand">
           <div class="name">RODRIGO ROCHA</div>
-          <div class="role">Gestor de Tráfego • Estética Alto Ticket</div>
+          <div class="role">Gestor Estratégico de Aquisição • Clínicas Premium</div>
         </div>
 
-        <a class="btn btn-outline topCta" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer" aria-label="Responder 3 perguntas no WhatsApp">
+        <!-- Top CTA -->
+        <a class="btn btn-outline topCta"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Responder 3 perguntas e verificar exclusividade">
           WhatsApp • Responder 3 perguntas →
         </a>
       </div>
@@ -947,33 +952,35 @@
         <div class="heroText reveal">
           <div class="kicker">
             <span class="dot" aria-hidden="true"></span>
-            <span>SISTEMA PREVISÍVEL • PACIENTES PARTICULARES • EXCLUSIVIDADE POR REGIÃO</span>
+            <span>SISTEMA PREVISÍVEL • PACIENTES PARTICULARES • EXCLUSIVIDADE POR PRAÇA</span>
           </div>
 
           <h1>Como atrair pacientes particulares todos os meses sem depender de indicações ou convênios</h1>
 
           <div class="spacer12"></div>
           <p class="lead subtle">
-            Implemento um sistema de aquisição previsível para clínicas premium/high ticket (ex.: <strong style="color:#fff;">Cirurgia Plástica</strong>, <strong style="color:#fff;">Harmonização Facial</strong>, <strong style="color:#fff;">Implante Capilar</strong>, <strong style="color:#fff;">Dermatologia</strong>, <strong style="color:#fff;">Odonto Estética</strong>, <strong style="color:#fff;">Biomedicina Estética</strong>).
+            Implemento um sistema de aquisição previsível para clínicas premium/high ticket (ex.: <strong style="color:#fff;">Implante Capilar</strong>, <strong style="color:#fff;">Cirurgia Plástica</strong>, <strong style="color:#fff;">Odonto Estética (Facetas)</strong>, <strong style="color:#fff;">Dermatologia</strong>, <strong style="color:#fff;">Biomedicina Estética</strong>).
             Você foca nos atendimentos, eu organizo campanhas + qualificação + rotina da recepção para agendar com previsibilidade.
           </p>
 
           <div class="spacer18"></div>
           <div class="metaRow" aria-label="Autoridade">
-            <span class="metaBadge"><span class="mini" aria-hidden="true"></span>Gestão de Tráfego Pago</span>
-            <span class="metaBadge"><span class="mini" aria-hidden="true"></span>Especialista em Estética Alto Padrão</span>
+            <span class="metaBadge"><span class="mini" aria-hidden="true"></span>Tráfego pago + processo comercial</span>
+            <span class="metaBadge"><span class="mini" aria-hidden="true"></span>Exclusividade por praça</span>
             <span class="metaBadge"><span class="mini" aria-hidden="true"></span>Métricas: CAC e custo/agendamento</span>
           </div>
 
           <div class="heroActions">
-            <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
+            <a class="btn btn-gold"
+               href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+               target="_blank" rel="noopener noreferrer">
               WhatsApp • Responder 3 perguntas →
             </a>
 
             <div class="metaRow micro">
               <span>Diagnóstico rápido</span>
               <span>•</span>
-              <span>Vagas limitadas por região</span>
+              <span>Vagas limitadas por praça</span>
             </div>
           </div>
         </div>
@@ -981,22 +988,24 @@
         <aside class="floatCard reveal" aria-label="Card flutuante">
           <h3>Rodrigo Rocha</h3>
           <p>
-            Gestor de Tráfego. Protocolo sob medida para dominar buscas locais no Google e capturar demanda com intenção real (sem “métricas de vaidade”).
+            Gestor estratégico de aquisição. Protocolo sob medida para capturar demanda com intenção real e colocar a recepção para converter com rotina (sem “métricas de vaidade”).
           </p>
 
           <ul class="floatList" aria-label="Pontos-chave">
             <li class="floatItem"><span class="icoMini" aria-hidden="true">◉</span><span><strong>Foco:</strong> Particular (alto padrão)</span></li>
-            <li class="floatItem"><span class="icoMini" aria-hidden="true">G</span><span><strong>Google Ads:</strong> pesquisa (intenção ativa)</span></li>
-            <li class="floatItem"><span class="icoMini" aria-hidden="true">M</span><span><strong>Meta Ads:</strong> autoridade (posicionamento)</span></li>
+            <li class="floatItem"><span class="icoMini" aria-hidden="true">G</span><span><strong>Google:</strong> intenção ativa (pesquisa + Maps)</span></li>
+            <li class="floatItem"><span class="icoMini" aria-hidden="true">M</span><span><strong>Meta:</strong> autoridade e demanda</span></li>
             <li class="floatItem"><span class="icoMini" aria-hidden="true">∑</span><span><strong>Métricas:</strong> CAC &amp; custo por agendamento</span></li>
           </ul>
 
           <div class="goldAlert" role="note">
-            ⚠️ <strong>Exclusividade geográfica:</strong> atendo apenas <strong>uma clínica por região</strong> para não encarecer o leilão e não competir comigo mesmo.
+            ⚠️ <strong>Exclusividade por praça:</strong> atendo apenas <strong>um parceiro por microrregião/cidade</strong> para o procedimento principal.
           </div>
 
           <div class="spacer12"></div>
-          <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-gold"
+             href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+             target="_blank" rel="noopener noreferrer">
             Verificar exclusividade agora →
           </a>
         </aside>
@@ -1026,7 +1035,7 @@
         </article>
         <article class="card hoverlift">
           <div class="objTitle">Funil</div>
-          <p style="color: rgba(0,0,0,.70);">Mapa de campanhas (Google Ads + Meta Ads + Google Business Profile), por serviços âncora e objetivos, para você saber onde cada real está indo.</p>
+          <p style="color: rgba(0,0,0,.70);">Mapa de campanhas (Meta Ads + Google Ads + Google Business Profile), por serviços âncora e objetivos, para você saber onde cada real está indo.</p>
         </article>
         <article class="card hoverlift">
           <div class="objTitle">Criativos</div>
@@ -1044,17 +1053,21 @@
 
       <div class="spacer18"></div>
       <div class="card soft">
-        <h3 style="margin:0 0 8px 0;">Sem amarras (risco reverso)</h3>
-        <p style="color: rgba(0,0,0,.70); margin:0;">Ao final dos 14 dias, você sai com um plano de ação aplicável e os materiais gerados permanecem com a sua clínica, com ou sem continuidade.</p>
+        <h3 style="margin:0 0 8px 0;">Âncora (risco reverso)</h3>
+        <p style="color: rgba(0,0,0,.70); margin:0;">
+          Se em 14 dias eu não entregar a estrutura e os materiais prometidos acima, eu estendo a implantação por mais 7 dias sem custo.
+        </p>
       </div>
 
       <div class="spacer18"></div>
       <div class="center">
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer">
           WhatsApp • Responder 3 perguntas e verificar exclusividade →
         </a>
         <div class="spacer10"></div>
-        <p class="micro" style="color: rgba(0,0,0,.60); margin:0;">Se sua região já tiver parceiro ativo, eu não abro exceção.</p>
+        <p class="micro" style="color: rgba(0,0,0,.60); margin:0;">Se sua praça já tiver parceiro ativo, eu não abro exceção.</p>
       </div>
     </div>
   </section>
@@ -1071,26 +1084,34 @@
 
       <div class="grid6" aria-label="Nichos atendidos" style="margin-top:22px;">
         <div class="card soft hoverlift niche">
-          <div class="icon">🔬</div>
-          <div>
-            <h3>Cirurgia Plástica</h3>
-            <p>Captação com intenção ativa e qualificação para alto ticket.</p>
-          </div>
-        </div>
-
-        <div class="card soft hoverlift niche">
-          <div class="icon">💉</div>
-          <div>
-            <h3>Harmonização Facial</h3>
-            <p>Posicionamento premium e agendamento com previsibilidade.</p>
-          </div>
-        </div>
-
-        <div class="card soft hoverlift niche">
           <div class="icon">💇</div>
           <div>
             <h3>Implante Capilar</h3>
-            <p>Domínio local no Google para capturar demanda pronta.</p>
+            <p>Intenção ativa + qualificação para alto ticket.</p>
+          </div>
+        </div>
+
+        <div class="card soft hoverlift niche">
+          <div class="icon">🩺</div>
+          <div>
+            <h3>Cirurgia Plástica (Lipo HD)</h3>
+            <p>Processo para não perder timing no WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="card soft hoverlift niche">
+          <div class="icon">🦷</div>
+          <div>
+            <h3>Odonto Estética (Facetas)</h3>
+            <p>Concorrência alta: ganha quem tem rotina e velocidade.</p>
+          </div>
+        </div>
+
+        <div class="card soft hoverlift niche">
+          <div class="icon">🔬</div>
+          <div>
+            <h3>Dermatologia</h3>
+            <p>Autoridade + intenção, sem depender de “postar todo dia”.</p>
           </div>
         </div>
 
@@ -1098,30 +1119,24 @@
           <div class="icon">🧬</div>
           <div>
             <h3>Biomedicina Estética</h3>
-            <p>Tráfego para procedimentos R$ 1.500+ com triagem.</p>
+            <p>Protocolo para aumentar taxa de agendamento.</p>
           </div>
         </div>
 
         <div class="card soft hoverlift niche">
-          <div class="icon">🦷</div>
+          <div class="icon">💉</div>
           <div>
-            <h3>Dentistas Estéticos</h3>
-            <p>Funil de agendamento com indicadores claros de custo.</p>
-          </div>
-        </div>
-
-        <div class="card soft hoverlift niche">
-          <div class="icon">🩺</div>
-          <div>
-            <h3>Dermatologistas</h3>
-            <p>Autoridade + intenção: sem depender de “postar todo dia”.</p>
+            <h3>Harmonização Facial</h3>
+            <p>Posicionamento premium e triagem.</p>
           </div>
         </div>
       </div>
 
       <div class="spacer18"></div>
       <div class="center">
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer">
           WhatsApp • Responder 3 perguntas →
         </a>
       </div>
@@ -1136,37 +1151,36 @@
         <div class="spacer12"></div>
 
         <p class="lead" style="color: var(--muted);">
-          Você formou-se por anos, fez especializações, construiu reputação. Mas quando um paciente busca “implante capilar”, “cirurgia plástica” ou “harmonização facial” no Google,
-          quem aparece é a clínica do bairro vizinho que entende de marketing — não necessariamente a mais qualificada.
-          Isso é matemática do algoritmo. E pode ser corrigido com um protocolo.
+          Você construiu reputação. Mas quando um paciente busca no Google, quem aparece é quem domina mídia + processo de atendimento.
+          Isso pode ser corrigido com um protocolo.
         </p>
 
         <div class="spacer18"></div>
         <div class="card hoverlift">
           <h3>O inimigo comum</h3>
           <p style="color: rgba(0,0,0,.70); margin-top:8px;">
-            Profissionais excelentes perdem pacientes para concorrentes medianos que apenas sabem usar Instagram melhor.
-            A solução não é “postar mais”. É implantar um sistema de aquisição com intenção ativa (Google) + autoridade (Meta) + qualificação.
+            Profissionais excelentes perdem pacientes para concorrentes medianos que apenas operam marketing melhor.
+            A solução não é “postar mais”. É intenção (Google/Maps) + autoridade (Meta) + qualificação + rotina na recepção.
           </p>
         </div>
 
-        <div class="marketGrid" aria-label="Dados em destaque">
+        <div class="marketGrid" aria-label="Pontos de atenção">
           <div class="metric hoverlift">
-            <div class="big">38%</div>
-            <div class="label">Queda de alcance orgânico (o “grátis” não sustenta previsibilidade).</div>
+            <div class="big">Meta</div>
+            <div class="label">Gera demanda e autoridade — mas exige mensagem e triagem.</div>
           </div>
           <div class="metric hoverlift">
-            <div class="big">R$ 100–300</div>
-            <div class="label">Faixa de CAC em muitos cenários; o ponto é controle e margem.</div>
+            <div class="big">Google</div>
+            <div class="label">Captura intenção ativa — mas precisa estrutura e mensuração.</div>
           </div>
           <div class="metric hoverlift">
-            <div class="big">14 dias</div>
-            <div class="label">Janela típica de pesquisa e comparação antes da decisão.</div>
+            <div class="big">Recepção</div>
+            <div class="label">Se não responde e acompanha, o investimento vaza.</div>
           </div>
         </div>
 
         <p class="micro" style="margin-top:10px;">
-          Observação: cada região tem dinâmica própria de leilão e demanda; a análise é feita com dados da sua praça.
+          Observação: cada praça tem dinâmica própria; o diagnóstico é feito com dados da sua região e estrutura.
         </p>
       </div>
 
@@ -1207,7 +1221,9 @@
         </svg>
 
         <div class="spacer12"></div>
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer">
           WhatsApp • Responder 3 perguntas →
         </a>
       </aside>
@@ -1231,11 +1247,10 @@
             <div>
               <div class="objTitle">Já contratei agência e não deu retorno</div>
               <p style="color: rgba(0,0,0,.70);">
-                Compreendo perfeitamente. A maioria das agências foca em métricas de vaidade — curtidas, alcance, “conteúdo bonito”.
-                Meu trabalho não é ser agência de publicidade. Eu implemento um sistema de resposta direta.
-                O indicador de sucesso é: quantas pessoas entraram em contato e quantas sentaram na cadeira.
+                A maioria das agências foca em métricas de vaidade. Aqui o foco é rotina de aquisição + atendimento,
+                com indicadores claros: custo por lead, custo por agendamento e CAC.
               </p>
-              <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Foco em agendamento e atendimento, não em aparência.</span></div>
+              <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Foco em agenda e negócio.</span></div>
             </div>
           </div>
         </article>
@@ -1246,11 +1261,9 @@
             <div>
               <div class="objTitle">Medo do conselho profissional</div>
               <p style="color: rgba(0,0,0,.70);">
-                Esse é exatamente o motivo pelo qual você precisa de um processo profissional.
-                Usamos campanhas de pesquisa no Google (paciente já buscando o procedimento) e Meta Ads baseadas em informação e autoridade.
-                Zero sensacionalismo, rigor ético total e posicionamento sob medida.
+                Processo e comunicação ética: intenção no Google e autoridade no Meta, sem sensacionalismo e sem promessas.
               </p>
-              <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Posicionamento ético com intenção e autoridade.</span></div>
+              <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Posicionamento profissional e seguro.</span></div>
             </div>
           </div>
         </article>
@@ -1261,11 +1274,9 @@
             <div>
               <div class="objTitle">Não tenho tempo para gravar conteúdo</div>
               <p style="color: rgba(0,0,0,.70);">
-                O objetivo é poupar seu tempo, não consumir mais.
-                Criamos funis que não dependem de produção diária. A base é intenção de busca + mensagens com protocolo + qualificação.
-                Seu funil roda com processo (campanhas + qualificação + rotina de atendimento) enquanto você atende.
+                O objetivo é poupar seu tempo. Criamos um plano de criativos e roteiros enxutos; o núcleo do resultado vem de intenção + qualificação + rotina na recepção.
               </p>
-              <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Sistema orientado à intenção, não à rotina de gravação.</span></div>
+              <div class="endCheck"><span class="tick" aria-hidden="true">✓</span><span>Sistema orientado à intenção, não a “postar todo dia”.</span></div>
             </div>
           </div>
         </article>
@@ -1273,73 +1284,70 @@
     </div>
   </section>
 
-  <!-- MÉTODO CQV -->
+  <!-- MÉTODO -->
   <section class="bg-navy" id="metodo">
     <div class="container reveal">
       <div class="center">
         <h2 style="color:#fff;">O sistema que permite focar 100% nos atendimentos enquanto a recepção agenda com protocolo e previsibilidade</h2>
         <p class="lead" style="margin:12px auto 0; color: rgba(255,255,255,.78);">
-          O Método CQV é um protocolo em 3 etapas. Ele não “depende de sorte”, nem de viralização.
-          Ele depende de execução e de métricas claras: CAC, custo por agendamento, taxa de comparecimento e taxa de fechamento.
+          Protocolo em 3 etapas: captar intenção, qualificar e otimizar por métricas de negócio.
         </p>
       </div>
 
-      <div class="timeline" aria-label="Timeline do Método CQV">
+      <div class="timeline" aria-label="Timeline do Método">
         <div class="step hoverlift">
           <div class="badge">1</div>
-          <h3>ETAPA 1 — DOMÍNIO LOCAL</h3>
+          <h3>ETAPA 1 — INTENÇÃO</h3>
           <p>
-            Configuração de campanhas no Google Ads para capturar intenção ativa.
-            Quando alguém busca (exemplos) “implante capilar preço”, “cirurgia plástica recuperação” ou “harmonização facial” na sua região, você entra no jogo de intenção ativa.
-            Em paralelo, eu otimizo seu Google Business Profile (Google Maps) para aumentar chamadas, rotas e contatos locais.
-            Exclusividade por região/raio: você é o único parceiro da área.
+            Campanhas para capturar demanda com intenção real (Google/Maps) e complementar com Meta para autoridade.
+            A ideia é parar de depender de sorte e começar a comprar demanda de forma controlada.
           </p>
           <div class="miniChecks" aria-label="Checks da etapa 1">
-            <span><i>✓</i>Intenção ativa (paciente já procurando).</span>
-            <span><i>✓</i>Domínio local sem dispersão de verba.</span>
-            <span><i>✓</i>Exclusividade para proteger leilão.</span>
+            <span><i>✓</i>Intenção ativa.</span>
+            <span><i>✓</i>Foco por procedimento.</span>
+            <span><i>✓</i>Mensuração desde o início.</span>
           </div>
         </div>
 
         <div class="step hoverlift">
           <div class="badge">2</div>
-          <h3>ETAPA 2 — QUALIFICAÇÃO INTELIGENTE</h3>
+          <h3>ETAPA 2 — QUALIFICAÇÃO</h3>
           <p>
-            Formulários que filtram leads frios antes do primeiro contato + scripts de atendimento para sua equipe.
-            Seu tempo (e o do médico) só é gasto com quem tem intenção real e capacidade de pagar.
+            Mensagens, perguntas e follow-up para filtrar curiosos e acelerar agendamento com quem tem perfil.
           </p>
           <div class="miniChecks" aria-label="Checks da etapa 2">
-            <span><i>✓</i>Triagem antes do contato.</span>
-            <span><i>✓</i>Atendimento com protocolo.</span>
-            <span><i>✓</i>Menos “tira-dúvidas”, mais agenda.</span>
+            <span><i>✓</i>3 perguntas no WhatsApp.</span>
+            <span><i>✓</i>Script para recepção.</span>
+            <span><i>✓</i>Rotina de acompanhamento.</span>
           </div>
         </div>
 
         <div class="step hoverlift">
           <div class="badge">3</div>
-          <h3>ETAPA 3 — MÉTRICAS DE NEGÓCIO</h3>
+          <h3>ETAPA 3 — MÉTRICAS</h3>
           <p>
-            Acompanhamento semanal de CAC por especialidade, taxa de comparecimento e custo por agendamento.
-            Dados claros para tomada de decisão. Previsibilidade científica, sem promessas vazias.
+            Otimização semanal com dados: custo por lead, custo por agendamento, CAC (quando possível) e ajustes de funil.
           </p>
           <div class="miniChecks" aria-label="Checks da etapa 3">
-            <span><i>✓</i>CAC por especialidade.</span>
-            <span><i>✓</i>Custo por agendamento.</span>
-            <span><i>✓</i>Rotina de otimização e previsibilidade.</span>
+            <span><i>✓</i>Rotina de otimização.</span>
+            <span><i>✓</i>Decisão por dados.</span>
+            <span><i>✓</i>Previsibilidade por processo.</span>
           </div>
         </div>
       </div>
 
       <div class="spacer18"></div>
       <div class="center">
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer">
           Ver o passo a passo do protocolo →
         </a>
       </div>
     </div>
   </section>
 
-  <!-- COMO É TRABALHAR COMIGO (NEW) -->
+  <!-- COMO É TRABALHAR -->
   <section class="bg-navy" id="como-trabalhar">
     <div class="container reveal">
       <div class="center">
@@ -1355,21 +1363,15 @@
             <div class="workBadge">1</div>
             <h3>Semana 1 — Diagnóstico</h3>
           </div>
-          <p>
-            Diagnóstico do cenário: praça, demanda, concorrência, estrutura de atendimento, gargalos e metas.
-            Aqui eu defino o protocolo e o caminho para previsibilidade.
-          </p>
+          <p>Levantamento de praça, concorrência, procedimentos âncora e estrutura de atendimento.</p>
         </div>
 
         <div class="workCard hoverlift">
           <div class="workTop">
             <div class="workBadge">2–3</div>
-            <h3>Semana 2–3 — Implementação</h3>
+            <h3>Semana 2–3 — Implantação</h3>
           </div>
-          <p>
-            Implemento campanhas, rastreamento, páginas/rotas e processo de qualificação.
-            Tudo para transformar intenção em agendamento com padrão.
-          </p>
+          <p>Configuração de campanhas, mensuração, scripts e rotina de qualificação.</p>
         </div>
 
         <div class="workCard hoverlift">
@@ -1377,31 +1379,30 @@
             <div class="workBadge">4+</div>
             <h3>Semana 4+ — Otimização</h3>
           </div>
-          <p>
-            Otimizações semanais com dados: CAC por especialidade, custo por agendamento, comparecimento e ajustes de funil.
-            O objetivo é consistência e previsibilidade.
-          </p>
+          <p>Otimizações semanais com dados para reduzir custo e aumentar agendamentos qualificados.</p>
         </div>
       </div>
 
       <div class="spacer18"></div>
       <div class="center">
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
-          Ver o passo a passo do protocolo →
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer">
+          WhatsApp • Responder 3 perguntas →
         </a>
       </div>
     </div>
   </section>
 
-  <!-- EXCLUSIVIDADE (URGÊNCIA) -->
+  <!-- EXCLUSIVIDADE -->
   <section class="bg-gold" id="exclusividade">
     <div class="container reveal">
       <div class="center">
-        <h2 style="color:#fff;">Por que trabalho com exclusividade de região</h2>
+        <h2 style="color:#fff;">Por que trabalho com exclusividade de praça</h2>
         <p class="lead" style="margin:12px auto 0; color: rgba(255,255,255,.92);">
-          Como o trabalho exige dominar as buscas locais no Google e a atenção no Meta na sua região,
-          não posso atender duas clínicas do mesmo nicho no mesmo bairro.
-          Isso seria competir contra mim mesmo no leilão e encarecer seu custo por paciente.
+          Como a operação depende de dominar a sua <strong>praça de captação</strong> (onde seus anúncios vão rodar e disputar atenção),
+          eu não atendo dois parceiros concorrentes no mesmo procedimento dentro da mesma microrregião/cidade.
+          A área exata de exclusividade é definida no diagnóstico, com base em demanda e concorrência.
         </p>
       </div>
 
@@ -1419,19 +1420,21 @@
           </p>
 
           <div class="goldCallout" role="note">
-            <strong>Alerta:</strong> Se você não fechar, o concorrente do bairro vizinho pode ficar com a vaga.
+            <strong>Alerta:</strong> Se sua praça já estiver fechada, eu não abro exceção.
           </div>
 
           <div class="spacer12"></div>
-          <a class="btn btn-outline" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
-            Garantir minha exclusividade agora →
+          <a class="btn btn-outline"
+             href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+             target="_blank" rel="noopener noreferrer">
+            Verificar exclusividade agora →
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- É PARA VOCÊ / NÃO É -->
+  <!-- FIT -->
   <section class="bg-white" id="fit">
     <div class="container reveal">
       <div class="center">
@@ -1446,10 +1449,9 @@
         <div class="fitCard green hoverlift">
           <h3>✅ É PRA VOCÊ SE:</h3>
           <ul class="bullets">
-            <li><span class="bico ok">✓</span><span>É clínica premium/high ticket (ex.: cirurgia plástica, harmonização, implante capilar, dermato, odonto estética, biomedicina estética).</span></li>
-            <li><span class="bico ok">✓</span><span>Trabalha com procedimentos de R$ 1.500+ (alto ticket).</span></li>
-            <li><span class="bico ok">✓</span><span>Quer parar de depender de convênios e indicações.</span></li>
-            <li><span class="bico ok">✓</span><span>Tem equipe que responde leads em até 2 horas.</span></li>
+            <li><span class="bico ok">✓</span><span>É clínica premium/high ticket e vende particular.</span></li>
+            <li><span class="bico ok">✓</span><span>Quer previsibilidade de agenda e processos (não “sorte”).</span></li>
+            <li><span class="bico ok">✓</span><span>Tem (ou aceita implementar) rotina de resposta e follow-up.</span></li>
             <li><span class="bico ok">✓</span><span>Entende que tráfego pago é investimento, não custo.</span></li>
           </ul>
         </div>
@@ -1458,26 +1460,26 @@
           <h3>❌ NÃO É PRA VOCÊ SE:</h3>
           <ul class="bullets">
             <li><span class="bico no">✕</span><span>Busca “resultado mágico em 7 dias”.</span></li>
-            <li><span class="bico no">✕</span><span>Quer começar com “R$ 500 para testar”.</span></li>
+            <li><span class="bico no">✕</span><span>Quer começar sem estrutura mínima de atendimento.</span></li>
             <li><span class="bico no">✕</span><span>Procura curso ou mentoria (eu EXECUTO, não ensino).</span></li>
           </ul>
 
           <div class="spacer12"></div>
           <p class="micro" style="color: rgba(0,0,0,.66);">
-            Meu trabalho exige rotina de acompanhamento e disciplina operacional na recepção. Sem isso, o sistema não performa.
+            Meu trabalho exige rotina e disciplina operacional. Sem isso, o sistema não performa.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- O QUE DIFERENCIA (NEW) -->
+  <!-- DIFERENCIAIS -->
   <section class="bg-soft" id="diferenciais">
     <div class="container reveal">
       <div class="center">
         <h2>O que diferencia</h2>
         <p class="lead" style="margin:12px auto 0; color: var(--muted);">
-          Consultoria premium com execução e disciplina de dados: menos volume, mais controle e previsibilidade.
+          Operação com execução + disciplina de dados: menos volume, mais controle e previsibilidade.
         </p>
       </div>
 
@@ -1487,9 +1489,7 @@
             <div class="diffIcon" aria-hidden="true">🏅</div>
             <div>
               <h3>Certificações</h3>
-              <p style="color: rgba(0,0,0,.70);">
-                Processo e linguagem de plataforma para reduzir improviso e aumentar consistência de execução.
-              </p>
+              <p style="color: rgba(0,0,0,.70);">Processo e linguagem de plataforma para reduzir improviso e aumentar consistência de execução.</p>
               <div class="logos" aria-label="Logos">
                 <div class="logoPill" aria-label="Meta Ads">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Meta (placeholder)">
@@ -1515,10 +1515,8 @@
             <div class="diffIcon" aria-hidden="true">🔒</div>
             <div>
               <h3>Máximo 8 clínicas simultâneas</h3>
-              <p style="color: rgba(0,0,0,.70);">
-                Operação enxuta e sob medida para manter padrão de execução e leitura de dados com profundidade.
-              </p>
-              <p class="micro" style="margin-top:10px;">Isso também reforça a exclusividade e reduz conflito de interesse.</p>
+              <p style="color: rgba(0,0,0,.70);">Operação enxuta e sob medida para manter padrão de execução e leitura de dados com profundidade.</p>
+              <p class="micro" style="margin-top:10px;">Isso também reforça exclusividade e reduz conflito de interesse.</p>
             </div>
           </div>
         </div>
@@ -1528,9 +1526,7 @@
             <div class="diffIcon" aria-hidden="true">📊</div>
             <div>
               <h3>Acompanhamento semanal com dados</h3>
-              <p style="color: rgba(0,0,0,.70);">
-                Rotina de otimização baseada em CAC por especialidade, custo por agendamento, comparecimento e ajustes do funil.
-              </p>
+              <p style="color: rgba(0,0,0,.70);">Rotina de otimização baseada em métricas e ajustes do funil.</p>
               <p class="micro" style="margin-top:10px;">Previsibilidade vem de processo, não de “esperança”.</p>
             </div>
           </div>
@@ -1539,14 +1535,16 @@
 
       <div class="spacer18"></div>
       <div class="center">
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer">
           WhatsApp • Responder 3 perguntas →
         </a>
       </div>
     </div>
   </section>
 
-  <!-- FAQ (NEW) -->
+  <!-- FAQ -->
   <section class="bg-white" id="faq">
     <div class="container reveal">
       <div class="center">
@@ -1559,11 +1557,22 @@
       <div class="faq" aria-label="Perguntas frequentes">
         <details>
           <summary>
+            <span>Quanto custa seu trabalho?</span>
+            <span class="faqIcon" aria-hidden="true">+</span>
+          </summary>
+          <div class="faqBody">
+            O investimento do meu trabalho é apresentado na reunião, porque varia por praça, volume e complexidade (procedimento principal, concorrência e estrutura de atendimento).
+            O que não muda é o protocolo de implantação e o acompanhamento por métricas (CAC e custo por agendamento).
+          </div>
+        </details>
+
+        <details>
+          <summary>
             <span>Investimento mínimo em mídia?</span>
             <span class="faqIcon" aria-hidden="true">+</span>
           </summary>
           <div class="faqBody">
-            Depende da sua praça, ticket e do volume que você quer sustentar com particular. No diagnóstico eu te digo uma faixa realista para competir com intenção (pesquisa) sem dispersão.
+            Depende da sua praça, ticket e do volume que você quer sustentar com particular. No diagnóstico eu te digo uma faixa realista para competir sem dispersão.
           </div>
         </details>
 
@@ -1573,7 +1582,7 @@
             <span class="faqIcon" aria-hidden="true">+</span>
           </summary>
           <div class="faqBody">
-            Existe curva de aprendizado e ajustes. O objetivo é construir previsibilidade: primeiro estabilizamos o fluxo de contatos/agendamentos e, depois, otimizamos CAC e custo por agendamento com dados semanais.
+            Existe curva de aprendizado e ajustes. O objetivo é construir previsibilidade: primeiro estabilizamos o fluxo de contatos/agendamentos e, depois, otimizamos com dados semanais.
           </div>
         </details>
 
@@ -1583,7 +1592,7 @@
             <span class="faqIcon" aria-hidden="true">+</span>
           </summary>
           <div class="faqBody">
-            Normal. O diagnóstico mostra se o problema é estratégia, execução, rastreamento, qualificação ou atendimento. Se fizer sentido, assumo a operação com protocolo de resposta direta (agenda e cadeira), sem métricas de vaidade.
+            Normal. O diagnóstico mostra se o problema é estratégia, execução, mensuração, qualificação ou atendimento. Se fizer sentido, eu assumo a operação com foco em agenda e cadeira.
           </div>
         </details>
 
@@ -1593,15 +1602,17 @@
             <span class="faqIcon" aria-hidden="true">+</span>
           </summary>
           <div class="faqBody">
-            Eu atendo apenas uma clínica por região/raio para não competir comigo mesmo no leilão e não encarecer seu custo. Se sua região já tiver parceiro ativo, eu não abro exceção.
+            Eu atendo apenas um parceiro por praça para o procedimento principal. Se a sua praça já tiver parceiro ativo, eu não abro exceção.
           </div>
         </details>
       </div>
 
       <div class="spacer18"></div>
       <div class="center">
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer">
-          Garantir minha exclusividade agora →
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer">
+          Verificar minha praça agora →
         </a>
       </div>
     </div>
@@ -1611,15 +1622,16 @@
   <section class="bg-navy" id="contato">
     <div class="container reveal">
       <div class="finalBox">
-        <h2 style="color:#fff;">Podemos iniciar a implementação na próxima semana?</h2>
+        <h2 style="color:#fff;">Podemos iniciar a implantação na próxima semana?</h2>
         <p class="lead" style="margin-top:12px; color: rgba(255,255,255,.80);">
-          Estou selecionando o parceiro ideal para esta região. Adoraria que fosse sua clínica.
-          Se fizer sentido, me chame no WhatsApp e eu explico o protocolo, o que preciso de você e quais métricas vamos acompanhar.
+          Estou selecionando o parceiro ideal para esta praça. Se fizer sentido, me chame no WhatsApp e eu explico o protocolo, o que preciso de você e quais métricas vamos acompanhar.
         </p>
 
         <div class="spacer18"></div>
         <div class="center">
-          <a class="btn btn-gold pulse" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer" style="max-width:640px;">
+          <a class="btn btn-gold pulse"
+             href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+             target="_blank" rel="noopener noreferrer" style="max-width:640px;">
             WhatsApp • Responder 3 perguntas →
           </a>
           <div class="spacer12"></div>
@@ -1631,7 +1643,7 @@
     </div>
   </section>
 
-  <!-- BANNER ÚLTIMA CHANCE (NEW) -->
+  <!-- BANNER ÚLTIMA CHANCE -->
   <section class="lastChance" aria-label="Última chance">
     <div class="container reveal">
       <div class="lastBox">
@@ -1639,12 +1651,14 @@
           <div class="lastIco" aria-hidden="true">⚠️</div>
           <div class="lastText">
             <h3>Última chance</h3>
-            <p>Se sua região já tiver parceiro ativo, não posso abrir exceção.</p>
+            <p>Se sua praça já tiver parceiro ativo, não posso abrir exceção.</p>
           </div>
         </div>
 
-        <a class="btn btn-gold" href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio." target="_blank" rel="noopener noreferrer" style="max-width: 520px;">
-          Verificar minha região agora →
+        <a class="btn btn-gold"
+           href="https://wa.me/5548999291215?text=Ol%C3%A1%2C%20Rodrigo.%20Vim%20pelo%20seu%20Instagram%20e%20quero%20verificar%20exclusividade%20na%20minha%20regi%C3%A3o.%20Podemos%20fazer%203%20perguntas%20r%C3%A1pidas%3F%20(1)%20cidade%2Fbairro%20(2)%20especialidade%2Fprocedimento%20principal%20(3)%20ticket%20m%C3%A9dio."
+           target="_blank" rel="noopener noreferrer" style="max-width: 520px;">
+          Verificar minha praça agora →
         </a>
       </div>
     </div>
@@ -1655,10 +1669,10 @@
     <div class="container">
       <div class="footGrid">
         <div>
-          <div class="footTitle">Rodrigo Rocha • Gestor de Tráfego Pago</div>
+          <div class="footTitle">Rodrigo Rocha • Gestor Estratégico de Aquisição</div>
           <div class="spacer12"></div>
           <div>
-            Especialista em Estética de Alto Ticket • Cirurgia Plástica • Implante Capilar • Harmonização • Dermatologia • Biomedicina Estética • Dentistas Estéticos • Estética Premium
+            Implante Capilar • Lipo HD • Facetas • Cirurgia Plástica • Odonto Estética • Dermatologia • Biomedicina Estética
           </div>
           <div class="spacer12"></div>
           <div>SC | Criciúma</div>
