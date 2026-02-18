@@ -3,39 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rodrigo Rocha | Sistema Previsível Pacientes Luxo</title>
+  <title>Rodrigo Rocha | Sistema Previsível Pacientes Premium</title>
   <style>
+    /* Reset e Tipografia Premium */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
-    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-    .hero { text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; }
-    h1 { font-size: clamp(2em, 5vw, 3em); font-weight: 800; margin-bottom: 20px; }
-    .btn-whatsapp { background: #25D366; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.1em; display: inline-block; box-shadow: 0 8px 25px rgba(37,211,102,0.3); transition: all 0.3s; }
-    .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37,211,102,0.4); }
-    .section { background: white; padding: 50px 30px; margin: 30px 0; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+      line-height: 1.6; 
+      color: #e0e0e0; 
+      background: #0a0a0a; 
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+    
+    /* Cores de Destaque */
+    :root {
+      --gold: #D4AF37;
+      --gold-hover: #F3E5AB;
+      --dark-gray: #1a1a1a;
+      --border-color: #333;
+    }
+
+    /* Hero Section */
+    .hero { 
+      text-align: center; 
+      padding: 100px 20px 60px; 
+      border-bottom: 1px solid var(--border-color);
+    }
+    .hero-label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85em;
+      color: var(--gold);
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    h1 { 
+      font-size: clamp(2.2em, 5vw, 3.5em); 
+      font-weight: 800; 
+      line-height: 1.1;
+      margin-bottom: 30px; 
+      color: #ffffff;
+      letter-spacing: -1px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #a0a0a0;
+      max-width: 700px;
+      margin: 0 auto 50px;
+      font-weight: 300;
+    }
+
+    /* Botão Premium */
+    .btn-premium { 
+      background: var(--gold); 
+      color: #000; 
+      padding: 20px 45px; 
+      text-decoration: none; 
+      border-radius: 4px; 
+      font-weight: 700; 
+      font-size: 1.1em; 
+      display: inline-block; 
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease; 
+      border: 1px solid var(--gold);
+    }
+    .btn-premium:hover { 
+      background: transparent;
+      color: var(--gold);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    }
+
+    /* Seções Gerais */
+    .section { 
+      padding: 80px 0; 
+      border-bottom: 1px solid var(--border-color);
+    }
+    h2 {
+      font-size: 2.2em;
+      color: #fff;
+      margin-bottom: 40px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    /* Bullets Section */
     .bullets ul { list-style: none; padding: 0; }
-    .bullets li { font-size: 1.2em; margin: 20px 0; padding-left: 30px; position: relative; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="%2325D366"><circle cx="12" cy="12" r="10"/></svg>') left 5px no-repeat; background-size: 20px; }
-    .proposta { background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%); border-left: 6px solid #d32f2f; }
-    .proposta p { font-size: 1.15em; font-weight: 500; }
-    .cta-final { background: #ff6b6b; color: white; text-align: center; padding: 60px 30px; }
-    .sticky-cta { position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white; padding: 15px 25px; border-radius: 50px; font-weight: 700; z-index: 1000; box-shadow: 0 8px 25px rgba(37,211,102,0.4); }
-    #popup-saida { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 40px; max-width: 450px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center; z-index: 1001; }
-    #popup-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; }
-    @media (max-width: 768px) { .container { padding: 15px; } .section { padding: 30px 20px; margin: 20px 0; } }
+    .bullets li { 
+      font-size: 1.2em; 
+      margin: 25px 0; 
+      padding-left: 40px; 
+      position: relative; 
+      color: #cccccc;
+      font-weight: 300;
+    }
+    .bullets li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    /* Proposta Indecente */
+    .proposta-box { 
+      background: var(--dark-gray); 
+      border-left: 4px solid var(--gold); 
+      padding: 50px 40px;
+      border-radius: 0 8px 8px 0;
+    }
+    .proposta-box p { 
+      font-size: 1.15em; 
+      font-weight: 300; 
+      margin-bottom: 20px;
+      color: #e0e0e0;
+    }
+
+    /* CTA Final */
+    .cta-final { 
+      text-align: center; 
+      padding: 100px 20px; 
+    }
+    .cta-final h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .cta-final p { 
+      font-size: 1.2em; 
+      color: #a0a0a0;
+      margin-bottom: 50px; 
+    }
+
+    /* Sticky CTA */
+    .sticky-cta { 
+      position: fixed; 
+      bottom: 30px; 
+      right: 30px; 
+      background: #ffffff; 
+      color: #000; 
+      padding: 15px 30px; 
+      border-radius: 50px; 
+      font-weight: 700; 
+      z-index: 1000; 
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+      transition: transform 0.3s ease;
+    }
+    .sticky-cta:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Pop-up de Saída */
+    #popup-overlay { 
+      display: none; 
+      position: fixed; 
+      top: 0; left: 0; 
+      width: 100%; height: 100%; 
+      background: rgba(0,0,0,0.85); 
+      backdrop-filter: blur(5px);
+      z-index: 1000; 
+    }
+    #popup-saida { 
+      display: none; 
+      position: fixed; 
+      top: 50%; left: 50%; 
+      transform: translate(-50%, -50%); 
+      background: var(--dark-gray); 
+      border: 1px solid var(--border-color);
+      padding: 50px 40px; 
+      width: 90%;
+      max-width: 500px; 
+      border-radius: 8px; 
+      text-align: center; 
+      z-index: 1001; 
+    }
+    #popup-saida h3 {
+      color: #fff;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+    #popup-saida p {
+      color: #a0a0a0;
+      margin-bottom: 30px;
+    }
+    .btn-close {
+      background: transparent;
+      color: #777;
+      border: 1px solid #444;
+      padding: 12px 24px;
+      margin-left: 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: all 0.3s;
+    }
+    .btn-close:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    @media (max-width: 768px) { 
+      .hero { padding: 60px 20px 40px; }
+      .section { padding: 50px 0; }
+      .proposta-box { padding: 30px 20px; }
+    }
   </style>
 </head>
 <body>
+  
   <div class="container">
-    <!-- Hero Gemini -->
+    
     <section class="hero">
+      <span class="hero-label">Exclusivo para Clínicas Premium</span>
       <h1>O Sistema Previsível Para Atrair Pacientes Particulares Sem Depender De Indicações</h1>
       <p>A verdade crua: Não vou te mostrar depoimentos genéricos ou médicos de banco de imagens. Vou te mostrar a exata matemática de como dominar sua região e assumir todo o risco nos primeiros 14 dias para provar que funciona.</p>
-      <a href="https://wa.me/5548999291215?text=Vi proposta indecenete, quero ser parceiro!" class="btn-whatsapp">Quero Ser O Único Parceiro Da Minha Região</a>
+      <a href="https://wa.me/5548999291215?text=Vi a proposta indecente e quero ser o parceiro da minha regiao!" class="btn-premium">Quero Ser O Único Parceiro Da Minha Região</a>
     </section>
 
-    <!-- Bullets Gemini -->
     <section class="section bullets">
-      <h2 style="text-align: center; font-size: 2em; margin-bottom: 40px;">A Matemática Da Aquisição</h2>
+      <h2>A Matemática Da Aquisição</h2>
       <ul>
         <li>O mapa exato que transforma buscas no Google em pacientes na sua cadeira</li>
         <li>Por que a sua recepção atual está queimando o seu dinheiro e como nosso script de 3 perguntas estanca esse sangramento em 24 horas</li>
@@ -45,39 +235,47 @@
       </ul>
     </section>
 
-    <!-- Proposta Indecente -->
-    <section class="section proposta">
-      <h2 style="font-size: 1.8em; margin-bottom: 25px;">A Proposta Indecente</h2>
-      <p>Eu sou direto. Meu objetivo é construir o maior estudo de caso de clínicas premium da sua região. Para conseguir isso, preciso de um parceiro comprometido e estou disposto a assumir 100% do risco da entrega.</p>
-      <p>Em 14 dias eu mapeio e instalo todo o funil de aquisição. Se você não receber a estrutura completa e pronta para rodar, eu estendo a implantação sem custo até entregar. Tudo documentado e sem falsas promessas.</p>
-      <div style="text-align: center; margin-top: 30px;">
-        <a href="https://wa.me/5548999291215?text=Proposta indecenete aceita!" class="btn-whatsapp">Aceito a Proposta – Vamos Dominar</a>
+    <section class="section">
+      <div class="proposta-box">
+        <h2 style="margin-bottom: 20px; font-size: 1.8em;">A Proposta Indecente</h2>
+        <p>Eu sou direto. Meu objetivo é construir o maior estudo de caso de clínicas premium da sua região. Para conseguir isso, preciso de um parceiro comprometido e estou disposto a assumir 100% do risco da entrega.</p>
+        <p>Em 14 dias eu mapeio e instalo todo o funil de aquisição. Se você não receber a estrutura completa e pronta para rodar, eu estendo a implantação sem custo até entregar. Tudo documentado e sem falsas promessas.</p>
+        <div style="margin-top: 40px;">
+          <a href="https://wa.me/5548999291215?text=Aceito a proposta indecente. Vamos dominar a regiao." class="btn-premium" style="font-size: 1em; padding: 15px 30px;">Aceitar Proposta</a>
+        </div>
       </div>
     </section>
 
-    <!-- CTA Final -->
     <section class="cta-final">
-      <h2 style="font-size: 2.5em; margin-bottom: 20px;">Procuro Apenas Uma Clínica Por Microrregião</h2>
-      <p style="font-size: 1.3em; margin-bottom: 40px;">Para focar toda a minha energia de entrega. Você quer ser o parceiro?</p>
-      <a href="https://wa.me/5548999291215?text=Quero ser único região!" class="btn-whatsapp">Sim, Eu Sou o Parceiro</a>
+      <h2>Procuro Apenas Uma Clínica Por Microrregião</h2>
+      <p>Para focar toda a minha energia de entrega. Você quer ser o parceiro?</p>
+      <a href="https://wa.me/5548999291215?text=Quero travar minha regiao agora." class="btn-premium">Sim, Eu Sou o Parceiro</a>
     </section>
+
   </div>
 
-  <!-- Sticky + Pop-up -->
-  <a href="https://wa.me/5548999291215" class="sticky-cta">Ser Único? 👆</a>
+  <a href="https://wa.me/5548999291215" class="sticky-cta">Falar no WhatsApp →</a>
+
   <div id="popup-overlay" onclick="closePopup()"></div>
   <div id="popup-saida">
-    <h3>Não Saia Sem Isso!</h3>
-    <p>Checklist grátis: 3 perguntas que eliminam curiosos em 24h.</p>
-    <a href="checklist.pdf" download class="btn-whatsapp">Baixe Checklist Agora</a>
-    <button onclick="closePopup()" style="padding: 12px 24px; margin-left: 10px; background: #ccc; border: none; border-radius: 25px; cursor: pointer;">Fechar</button>
+    <h3>Espere. Não saia ainda.</h3>
+    <p>Tenho um mapa de aquisição gratuito para sua clínica. Clique abaixo e descubra se sua região ainda está disponível.</p>
+    <a href="https://wa.me/5548999291215?text=Quero meu mapa de aquisicao gratuito." class="btn-premium" style="font-size: 0.9em; padding: 15px 25px;">Verificar Disponibilidade</a>
+    <button onclick="closePopup()" class="btn-close">Fechar</button>
   </div>
 
   <script>
-    window.addEventListener('beforeunload', () => {
-      document.getElementById('popup-overlay').style.display = 'block';
-      document.getElementById('popup-saida').style.display = 'block';
+    // Lógica para o pop-up de intenção de saída
+    let popupMostrado = false;
+    
+    document.addEventListener('mouseleave', function(e) {
+      if(e.clientY < 0 && !popupMostrado) {
+        document.getElementById('popup-overlay').style.display = 'block';
+        document.getElementById('popup-saida').style.display = 'block';
+        popupMostrado = true;
+      }
     });
+
     function closePopup() {
       document.getElementById('popup-overlay').style.display = 'none';
       document.getElementById('popup-saida').style.display = 'none';
